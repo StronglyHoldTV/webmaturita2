@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!--
+      Need a visual blank slate?
+      Remove all code in `styles.css`!
+    -->
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
+      rel="stylesheet"
+    />
+
+    <header class="wrap">
+      <h1>Hadoštúr</h1>
+      <p class="score">Skóre: <span id="score_value">0</span></p>
+    </header>
+
+    <canvas
+      class="wrap"
+      id="snake"
+      width="320"
+      height="320"
+      tabindex="1"
+    ></canvas>
+
+    <!-- Game Over Screen -->
+    <div id="gameover">
+      <h2>Ne hagyj el minket magyarokat, játssz újra!</h2>
+      <p>
+        nyomja meg a  
+        <span style="background-color: #ffffff; color: #000000">szóközt</span> to
+        a kezdéshez a
+      </p>
+      <a id="newgame_gameover">új játék</a>
+      <a id="setting_gameover">beállítások</a>
+    </div>
+
+    <!-- Setting screen -->
+    <div id="setting">
+      <h2>Nastavenia</h2>
+
+      <a id="newgame_setting">Nová hra</a>
+
+      <p>
+        Rýchlosť:
+        <input id="speed1" type="radio" name="speed" value="120" checked />
+        <label for="speed1">Pomalá</label>
+        <input id="speed2" type="radio" name="speed" value="75" />
+        <label for="speed2">Stredná</label>
+        <input id="speed3" type="radio" name="speed" value="35" />
+        <label for="speed3">Rýchla</label>
+      </p>
+
+      <p>
+        Stana:
+        <input id="wallon" type="radio" name="wall" value="1" checked />
+        <label for="wallon">Zapnutá</label>
+        <input id="walloff" type="radio" name="wall" value="0" />
+        <label for="walloff">Vypnutá</label>
+      </p>
+    </div>
+
+    <!-- Main Menu Screen -->
+    <div id="menu">
+      <h2>Hadoštúr</h2>
+
+      <a id="newgame_menu">nová hra</a>
+      <a id="setting_menu">nastavenia</a>
+    </div>
+  </body>
+</html>
