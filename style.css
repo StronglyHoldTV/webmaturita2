@@ -50,23 +50,23 @@ header.masthead {
 	transition: all ease-in-out 200ms;
 }
 
-.navbar.scrolled {
+/*.navbar.notscrolled {
 	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
     background-color: #fff;
 	color: black;
 }
 
-.navbar.scrolled .container .navbar-brand {
+.navbar.notscrolled .container .navbar-brand {
 	color: black;
 }
 
-.navbar.scrolled .container .nav-item .nav-link {
+.navbar.notscrolled .container .nav-item .nav-link {
 	color: black;
 }
 
-.navbar.scrolled .container .nav-item .nav-link.active {
+.navbar.notscrolled .container .nav-item .nav-link.active {
 	color: #f4623a
-}
+}*/
 
 .colored {
 	background-color: #f4623a;

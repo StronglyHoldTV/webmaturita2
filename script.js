@@ -22,6 +22,6 @@ typewriter
 $(function () {
   $(document).scroll(function () {
     var $nav = $(".navbar");
-    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+    $nav.toggleClass('bg-body', $(this).scrollTop() > $nav.height());
   });
 });
