@@ -1,15 +1,18 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="dark">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Slovenská literatúra</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="./type.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm border-bottom fixed-top">
+    <nav class="navbar navbar-expand-sm fixed-top text-white">
+        <div class="top"></div>
         <div class="container">
             <a class="navbar-brand" href="#">Navbar</a>
             <button
@@ -55,24 +58,109 @@
                         </div>
                     </li>
                 </ul>
-                <form class="d-flex my-2 my-lg-0">
-                    <input
-                        class="form-control me-sm-2"
-                        type="text"
-                        placeholder="Search"
-                    />
-                    <button
-                        class="btn btn-outline-success my-2 my-sm-0"
-                        type="submit"
-                    >
-                        Search
-                    </button>
-                </form>
             </div>
         </div>
     </nav>
+    <header class="masthead vh-100">
+        <div class="container row align-items-center mt-2 h-100 mx-auto">
+            <div class="col-md-6 d-none d-md-flex justify-content-center"><img src="./images/stur.png" class="w-75 mh-100"></div>
+            <div class="col-md-6 d-flex justify-content-center text-center text-white">
+                <div id="type-writer" class="align-middle">
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="lit">
+        <div class="colored text-white w-100 py-3 text-center"><h2>Slovenská literatúra</h2></div>
+        <div class="container row w-100 pb-3 border-bottom mx-auto">
+            <div class="col-md-6 col-lg-3 p-0">
+                <div class="card my-4 mx-2" style="background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 20%), url('./images/uhrovec.jpg')">
+                    <div class="card-body text-center d-flex align-items-center justify-content-center">
+                        <div>
+                            <h4 class="card-title my-0"><a class="text-white text-decoration-none" herf="https://creativemanner.com">Uhrovec</a></h4>
+                            <p class="text-white normally-hidden p-0">Moje rodné mesto.</p>
+                        </div>
+                    </div>
+                    <a href="#" class="stretched-link"></a>
+                </div>
+            </div>
 
-    <div class="vh-100"></div>
-    <h1 class="carousel-caption heartbeat">Slovenská liratúra</h1>
+            <div class="col-md-6 col-lg-3 p-0">
+                <div class="card my-4 mx-2" style="background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 20%), url('./images/uhrovec.jpg')">
+                    <div class="card-body text-center d-flex align-items-center justify-content-center">
+                        <div>
+                            <h4 class="card-title my-0"><a class="text-white text-decoration-none" herf="https://creativemanner.com">Uhrovec</a></h4>
+                            <p class="text-white normally-hidden p-0">Moje rodné mesto.</p>
+                        </div>
+                    </div>
+                    <a href="#" class="stretched-link"></a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 p-0">
+                <div class="card my-4 mx-2">
+                    <div class="card-body text-center d-flex align-items-center justify-content-center">
+                        <div>
+                            <h4 class="card-title my-0"><a class="text-decoration-none text-dark" herf="https://creativemanner.com">Je tu toho nejako málo...</a></h4>
+                            <p class="normally-hidden p-0 text-dark">Nechceš prispieť? Klikni!</p>
+                        </div>
+                    </div>
+                    <a href="#" class="stretched-link"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="colored text-white w-100 py-3 text-center"><h2>Ľudovít Štúr</h2></div>
+        <div class="container row pb-3 border-bottom mx-auto">
+            <div class="col-md-6 col-lg-3 p-0">
+                <div class="card my-4 mx-2" style="background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 20%), url('./images/uhrovec.jpg')">
+                    <div class="card-body text-center d-flex align-items-center justify-content-center">
+                        <div>
+                            <h4 class="card-title my-0"><a class="text-white text-decoration-none">Uhrovec</a></h4>
+                            <p class="text-white normally-hidden p-0">Moje rodné mesto.</p>
+                        </div>
+                    </div>
+                    <a href="#" class="stretched-link"></a>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3 p-0">
+                <div class="card my-4 mx-2" style="background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 20%), url('./images/kossut.jpg') no-repeat center">
+                    <div class="card-body text-center d-flex align-items-center justify-content-center">
+                        <div>
+                            <h4 class="card-title my-0"><a class="text-white text-decoration-none">Lajos Kossuth</a></h4>
+                            <p class="text-white normally-hidden p-0">Môj úhlavný nepriateľ.</p>
+                        </div>
+                    </div>
+                    <a href="#" class="stretched-link"></a>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3 p-0">
+                <div class="card my-4 mx-2">
+                    <div class="card-body text-center d-flex align-items-center justify-content-center">
+                        <div>
+                            <h4 class="card-title my-0"><a class="text-decoration-none text-dark" herf="https://creativemanner.com">Je tu toho nejako málo...</a></h4>
+                            <p class="normally-hidden p-0 text-dark">Nechceš prispieť? Klikni!</p>
+                        </div>
+                    </div>
+                    <a href="#" class="stretched-link"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--<p>
+
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed laoreet porttitor sapien sit amet rhoncus. Etiam maximus ex urna, in pellentesque augue tristique vel. Etiam pellentesque rhoncus faucibus. Aliquam erat volutpat. Vestibulum vestibulum porttitor tellus eu semper. Cras et urna est. Nullam pretium mauris nunc, nec rutrum arcu ullamcorper a. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec placerat, orci at tempor pulvinar, ligula sem tincidunt felis, id viverra sapien urna ac tellus. Aliquam nec laoreet lorem, vel ultricies nunc.
+        
+        Praesent vitae posuere tellus, ac aliquam diam. Integer et volutpat quam. Cras laoreet consectetur erat in consectetur. Mauris tempus mi eros, non sodales arcu egestas at. In auctor ac tortor vel venenatis. Aenean vel tortor ipsum. Sed et posuere odio. Praesent sodales velit vel auctor dapibus. Aenean lorem libero, pharetra eu velit sed, eleifend lacinia ex. Phasellus at neque accumsan augue viverra vestibulum non quis magna. Suspendisse tortor est, imperdiet vitae semper in, pharetra sed mauris. Mauris pharetra et tellus eget maximus.
+        
+        Donec id tortor ac massa luctus dictum vel eget orci. Nulla fermentum molestie risus id consequat. Sed felis leo, ornare eu ullamcorper at, vestibulum sit amet eros. Sed sed ex sem. Suspendisse lacus augue, consectetur a consectetur non, ullamcorper vel nibh. Integer mauris nulla, pellentesque auctor ligula eget, eleifend interdum diam. Vestibulum et dictum elit. Quisque eleifend efficitur gravida.
+        
+        Nulla facilisi. Donec eget maximus mi. Maecenas ullamcorper condimentum ex in tempus. Sed pulvinar sapien et purus consectetur, ac efficitur nisl feugiat. Cras quam leo, auctor sed arcu eget, fringilla viverra lacus. Nunc eget tortor egestas, feugiat sapien in, pulvinar ante. Nulla lectus diam, pharetra non urna aliquam, molestie aliquet metus. Ut neque nibh, egestas vitae pretium pulvinar, sollicitudin id est. Etiam ac sem tellus. Maecenas finibus nisl nunc, quis tincidunt diam iaculis in. Morbi sit amet elit fermentum, blandit ligula eget, bibendum sapien.
+        
+        Nam sem urna, blandit vel est vitae, pharetra tristique dolor. Quisque laoreet, ante at euismod pulvinar, nibh sem dignissim eros, eget vulputate sapien nisi sit amet odio. Pellentesque at felis vel urna bibendum scelerisque non sit amet ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Quisque rhoncus tellus eu luctus eleifend. Mauris gravida dolor varius lacus laoreet imperdiet. Proin pellentesque eleifend ligula eget maximus. 
+    </p>-->
+    <script src="./script.js"></script>
 </body>
 </html>

@@ -1,3 +1,7 @@
+:root {
+	/*--bs-primary-rgb: rgb(244,58,98)*/
+}
+
 .heartbeat {
     font-size: 20px;
 	color: #e00;
@@ -7,4 +11,76 @@
 
 @keyframes beat{
 	to { transform: scale(1.4); }
+}
+
+@media (min-width: 992px) {
+	header.masthead {
+	  height: 100vh;
+	  min-height: 40rem;
+	  padding-top: 4.5rem;
+	  padding-bottom: 0;
+	}
+}
+
+header.masthead {
+	padding-top: 10rem;
+	padding-bottom: calc(10rem - 4.5rem);
+	background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("./images/literature.jpg");
+	  background-position-x: 0%, 0%;
+	  background-position-y: 0%, 0%;
+	  background-repeat: repeat, repeat;
+	  background-attachment: scroll, scroll;
+	  background-size: auto, auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-size: cover;
+	overflow: hidden; 
+	position: relative; 
+	width: 100%; 
+	background-attachment: fixed; 
+	background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; 
+	background-repeat: no-repeat; background-position: center;
+}
+
+.navbar,
+.navbar .container .nav-item .nav-link,
+.navbar .container .navbar-brand
+ {
+	transition: all ease-in-out 200ms;
+}
+
+.navbar.scrolled {
+	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    background-color: #fff;
+	color: black;
+}
+
+.navbar.scrolled .container .navbar-brand {
+	color: black;
+}
+
+.navbar.scrolled .container .nav-item .nav-link {
+	color: black;
+}
+
+.navbar.scrolled .container .nav-item .nav-link.active {
+	color: #f4623a
+}
+
+.colored {
+	background-color: #f4623a;
+}
+
+.card {
+	min-height: 300px;
+}
+
+.card:hover > .card-body > div > .normally-hidden {
+	opacity: 100%;
+}
+
+.card > .card-body > div > .normally-hidden {
+	opacity: 0;
+	transition: all ease-in-out 200ms;
 }
