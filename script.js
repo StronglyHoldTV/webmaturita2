@@ -23,5 +23,6 @@ $(function () {
   $(document).scroll(function () {
     var $nav = $(".navbar");
     $nav.toggleClass('bg-body', $(this).scrollTop() > $nav.height());
+    $nav.toggleClass('notscrolled', $(this).scrollTop() <= $nav.height());
   });
 });
