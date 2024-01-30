@@ -66,3 +66,7 @@ header.masthead {
 	opacity: 0;
 	transition: all ease-in-out 200ms;
 }
+
+.topMargin {
+  margin-top: 76px;
+}
