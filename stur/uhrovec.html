@@ -7,14 +7,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script src="./type.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
+    <script src="../type.js"></script>
 </head>
 <body>
-    <nav class="notscrolled navbar navbar-dark  navbar-expand-sm fixed-top">
+    <nav class="navbar bg-body shadow navbar-expand-sm fixed-top">
         <div class="top"></div>
         <div class="container">
-            <a class="navbar-brand" href="#">Navbar</a>
+            <a class="navbar-brand" href="../index.html">Navbar</a>
             <button
                 class="navbar-toggler d-lg-none"
                 type="button"
@@ -27,14 +27,6 @@
             </button>
             <div class="collapse navbar-collapse" id="collapsibleNavId">
                 <ul class="navbar-nav me-auto mt-2 mt-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#" aria-current="page"
-                            >Home
-                            <span class="visually-hidden">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
                     <li class="nav-item dropdown">
                         <a
                             class="nav-link dropdown-toggle"
@@ -49,10 +41,10 @@
                             class="dropdown-menu"
                             aria-labelledby="dropdownId"
                         >
-                            <a class="dropdown-item" href="./literatura/marina.html"
+                            <a class="dropdown-item" href="../literatura/marina.html"
                                 >Marína</a
                             >
-                            <a class="dropdown-item" href="./literatura/marina.html"
+                            <a class="dropdown-item" href="../literatura/marina.html"
                                 >Mor ho!</a
                             >
                         </div>
@@ -70,10 +62,10 @@
                             class="dropdown-menu"
                             aria-labelledby="dropdownId"
                         >
-                            <a class="dropdown-item" href="./stur/uhrovec.html"
+                            <a class="dropdown-item" href="../stur/uhrovec.html"
                                 >Uhrovec</a
                             >
-                            <a class="dropdown-item" href="./stur/kossuth.html"
+                            <a class="dropdown-item" href="../stur/kossuth.html"
                                 >Kossuth</a
                             >
                         </div>
@@ -85,14 +77,84 @@
             </div>
         </div>
     </nav>
-    <header class="masthead vh-100">
-        <div class="container row align-items-center mt-2 h-100 mx-auto">
-            <div class="col-md-6 d-none d-md-flex justify-content-center"><img src="./images/stur.png" class="w-75 mh-100"></div>
-            <div class="col-md-6 d-flex justify-content-center text-center text-white">
+    <div class="container topMargin">
+        <div class="row align-items-center mx-auto">
+            <div class="col-md-6 d-none d-md-flex justify-content-center"><img src="../images/stur.png" class="w-75 mh-100"></div>
+            <div class="col-md-6 d-flex justify-content-center text-center">
                 <div id="type-writer" class="align-middle">
                 </div>
             </div>
         </div>
-    </header>
+    </div>
+    <div class="container d-none" id="body2"> <!-- add d-none -->
+        <div class="row mt-2 align-items-center">
+            <div class="col-md-12"><h3>Uhrovec</h3>
+                <p><b>Uhrovec</b> je obec na Slovensku v okrese Bánovce nad Bebravou. </p>
+            </div>
+            <div class="col-md-3 d-flex justify-content-center">
+                <figure class="figure">
+                    <img src="../images/uhrovec1.jpg" class="figure-img img-fluid rounded border" alt="...">
+                    <figcaption class="figure-caption text-center">Evanjelický kostol</figcaption>
+                </figure>
+            </div>
+            <div class="col-md-9">
+                <h3>Dejiny</h3>
+                <p>Prvá zmienka o obci je z roku 1258. Do tohto obdobia sa zároveň datuje výstavba Uhroveckého hradu. Po stáročia remeselné mestečko s trhovými právami patriace panstvu Zayovcov, ktoré malo sídlo spočiatku na hrade Uhrovec, neskôr v kaštieli priamo v obci. V roku 1815 sa v dome pod týmto kaštieľom narodil Ľudovít Štúr. Jeho erb má 5 ruží. </p>
+                <p>Obyvateľstvo sa zaoberalo najmä poľnohospodárstvom, pestovalo víno vo vinohradoch a ovocie v niekoľkých sadoch, ktoré spracovávali sušením. Okrem toho tu bolo i niekoľko rybníkov. </p>
+            </div>
+            <div class="col-md-9">
+                <p>Od prvej polovice 19. storočia tu boli menšie priemyselné závody, k najdôležitejším patrila skláreň, ktorá existovala v rokoch 1874 až 1914 a továreň na výrobu rôznych drobných výrobkov z dreva, ktorá sa neskôr preorientovala na výrobu vychádzkových palíc. V roku 1875 vznikla rezbárska škola, ktorá bola na úrovni umeleckej priemyslovky. Počas tohto obdobia najväčší rozkvet obce, počet obyvateľov sa blížil k 2 000, čo je najviac v histórii. Tesne pred vypuknutím prvej svetovej vojny sa skláreň presťahovala do Lednických Rovní a v Uhrovci zostal iba drevospracujúci priemysel. V roku 1921 sa narodil v tom istom dome ako Ľudovít Štúr aj ďalší významný rodák z obce - Alexander Dubček. </p>
+                <p>Počas druhej svetovej vojny a SNP účasť občanov v ilegálnej činnosti a partizánskom hnutí - pôsobila tu partizánska brigáda Jána Žižku pod vedením plk. Teodora Polu, ktorá mala v chotári na kopci Jankov vŕšok vybudované bunkre. Nemci obec dňa 5. novembra 1944 čiastočne vypálili a 13. decembra 1944 v bunkri zaživa upálili siedmich zranených partizánov. Sovietska a rumunská armáda Uhrovec oslobodila 4. apríla 1945. Po vojne bol v rokoch 1946-1951 na Jankovom vŕšku vybudovaný pamätník - mohyla s pylónom a mauzóleom. </p>
+            </div>
+            <div class="col-md-3 d-flex justify-content-center">
+                <figure class="figure">
+                    <img src="../images/uhrovec3.jpg" class="figure-img img-fluid rounded border" alt="...">
+                    <figcaption class="figure-caption text-center">Rodný dom Ľ. Štúra a A. Dubčeka</figcaption>
+                </figure>
+            </div>
+            <div class="col-md-3 d-flex justify-content-center">
+                <figure class="figure">
+                    <img src="../images/uhrovec2.jpg" class="figure-img img-fluid rounded border" alt="...">
+                    <figcaption class="figure-caption text-center">Kaštieľ Zayovcov</figcaption>
+                </figure>
+            </div>
+            <div class="col-md-9">
+                <p>Za socializmu rozsiahla výstavba rodinných a bytových domov a prestavba centra. Už v roku 1951 bola vyasfaltovaná hlavná cesta, verejné osvetlenie pribudlo o dva roky neskôr. V roku 1959 sa postavila prvá štvorbytovka, o rok neskôr škola, v roku 1961 dvanásťbytová jednotka, po zbúraní severnej zástavby námestia v roku 1963 sa vybudoval obchodný dom a reštaurácia Jednoty ĽSD. V roku 1964 bola ukončená výstavba Domu služieb, o rok 18 bytová jednotka a o ďalšie dva roky 20 bytová. V roku 1965 bola otvorená expozícia v rekonštruovanom rodnom dome Ľudovíta Štúra. V roku 1967 sa začala výstavba novej 20 bytovej jednotky a ihriska. Stavba vodovodu bola ukončená v roku 1969, ale rozsiahla výstavba pokračovala aj v sedemdesiatych rokoch. V roku 1973 bolo odovzdaných do užívania 32 bytov v panelovej bytovke, prebiehala výstavba požiarnej zbrojnice, zdravotného strediska, kolkárne. Paličkáreň dostala v roku 1974 novú budovu a drevospracujúci závod Mier zase novú halu (1975). V roku 1977 bol zavedený plyn. Prestavba obce bola taká rozsiahla, že v 80. rokoch boli tri štvrtiny domov obce postavené po roku 1945. Pred pádom socializmu bol po značnom odďaľovaní otvorený kultúrny dom (r. 1986). Napriek značným investíciam v obci sa počas tohto obdobia nepodarilo kompletne rekonštruovať kaštieľ, hoci projekt bol vypracovaný ešte v roku 1967.</p>
+                <p>Po roku 1989 sa najskôr prejavila určitá stagnácia, ale v poslednom čase obec zažíva nebývalý stavebný ruch - po rekonštrukcii je základná škola, námestie s chodníkmi, cestou, osvetlením a autobusovými zastávkami. Postavili sa aj dve nové bytovky, ale kaštieľ je stále schátraný. </p>
+            </div>
+            <div class="col-md-12">
+                <h3>Zdroje</h3>
+                <ul>
+                    <li><a href="https://sk.wikipedia.org/wiki/Uhrovec_(obec)">Wikipedia - Uhrovec</a></li>
+                </ul>
+            </div>
+        </div>
+          <footer class="d-flex flex-wrap justify-content-center align-items-center py-3 my-4 border-top">
+            <p>© Marek Villim 2024</p>
+
+          </footer>
+    </div>
+    <script>
+        var app = document.getElementById('type-writer');
+
+        var typewriter = new Typewriter(app, {
+          loop: false,
+          delay: 75,
+        });
+
+
+        console.log(app)
+        typewriter
+          .pauseFor(2500)
+          .typeString('Moje rodné mesto.')
+          .pauseFor(300)
+          .typeString('<br>Mal som ho rád.')
+          .pauseFor(300)
+          .typeString('<br> <b>Zay Uhrovec</b>.')
+          .callFunction(() => {
+               document.getElementById('body2').classList.remove('d-none');
+           })
+          .start();
+    </script>
 </body>
 </html>
