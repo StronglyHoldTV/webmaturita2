@@ -70,3 +70,7 @@ header.masthead {
 .topMargin {
   margin-top: 76px;
 }
+
+body {
+	font-family: "Montserrat", sans-serif;
+}
